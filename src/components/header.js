@@ -15,9 +15,9 @@ const Header = ({ siteTitle }) => (
     <div className="mabvar-menu" id="nav">
       <div className="navbar-start"></div>
       <div className="navbar-end">
-        <a className="navbar-item is-tab" href="/#">Home</a>
-        <a className="navbar-item is-tab" href="/#price">Price</a>
-        <a className="navbar-item is-tab" href="/#contact">Contact</a>
+        <a className="navbar-item is-tab" href="/#">TOP</a>
+        <a className="navbar-item is-tab" href="/#price">価格表</a>
+        <a className="navbar-item is-tab" href="/#contact">問い合わせ</a>
       </div>
     </div>
   </div>

@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import Background from '../images/bg-price.jpg'
+import TitleBar from './titleBar'
 
 const Hero = styled.section.attrs({
   className: 'hero is-fullheight'
@@ -35,6 +36,7 @@ const PriceItemContent = styled.div.attrs({
 
 const Price = () => (
   <Hero>
+    <TitleBar title="価格表" subtitle="（価格は税抜きです。）" />
     <PriceRoot className="hero-body" id="price">
       <PriceItem>
         <PriceItemHeader>Starter</PriceItemHeader>
