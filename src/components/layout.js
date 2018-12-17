@@ -4,6 +4,7 @@ import { StaticQuery, graphql } from 'gatsby'
 import styled from 'styled-components'
 
 import Header from './header'
+import Footer from './footer'
 import './all.scss'
 
 const Body = styled.div.attrs({
@@ -29,6 +30,7 @@ const Layout = ({ children }) => (
         <Body>
           {children}
         </Body>
+        <Footer siteTitle={data.site.siteMetadata.title} />
       </>
     )}
   />

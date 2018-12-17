@@ -17,7 +17,7 @@ const Header = ({ siteTitle }) => (
       <div className="navbar-end">
         <a className="navbar-item is-tab" href="/#">TOP</a>
         <a className="navbar-item is-tab" href="/#price">価格表</a>
-        <a className="navbar-item is-tab" href="/#contact">問い合わせ</a>
+        <a className="navbar-item is-tab" href="/#contact">お問い合わせ</a>
       </div>
     </div>
   </div>

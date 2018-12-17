@@ -35,9 +35,9 @@ const PriceItemContent = styled.div.attrs({
 })``
 
 const Price = () => (
-  <Hero>
+  <Hero id="price">
     <TitleBar title="価格表" subtitle="（価格は税抜きです。）" />
-    <PriceRoot className="hero-body" id="price">
+    <PriceRoot className="hero-body">
       <PriceItem>
         <PriceItemHeader>Starter</PriceItemHeader>
         <PriceItemContent>

@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 const TitleBarRoot = styled.div.attrs({
-  className: "hero"
+  className: "hero is-info"
 })`
   background-color: #dddddd;
   margin-top: 52px;
