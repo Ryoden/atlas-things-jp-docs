@@ -35,7 +35,7 @@ const PriceItemContent = styled.div.attrs({
 
 const Price = () => (
   <Hero>
-    <PriceRoot className="hero-body">
+    <PriceRoot className="hero-body" id="price">
       <PriceItem>
         <PriceItemHeader>Starter</PriceItemHeader>
         <PriceItemContent>

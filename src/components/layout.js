@@ -6,7 +6,9 @@ import styled from 'styled-components'
 import Header from './header'
 import './all.scss'
 
-const Body = styled.div`
+const Body = styled.div.attrs({
+  className: 'site-content'
+})`
   padding-top: 0px;
 `
 
