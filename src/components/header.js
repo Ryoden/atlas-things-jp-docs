@@ -1,42 +1,44 @@
-import { Link } from 'gatsby'
-import PropTypes from 'prop-types'
 import React from 'react'
 
-const Header = ({ siteTitle }) => (
-  <div
-    style={{
-      background: '#1eb9ee',
-      marginBottom: '1.45rem',
-    }}
-  >
-    <div
-      style={{
-        margin: '0 auto',
-        maxWidth: 960,
-        padding: '1.45rem 1.0875rem',
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: 'white',
-            textDecoration: 'none',
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
-  </div>
-)
+import Logo from '../images/logo.png'
 
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
+class Header extends React.Component {
+  state = {
+    isActive: false,
+  }
 
-Header.defaultProps = {
-  siteTitle: '',
+  toggleNav = () => {
+    this.setState(prevState => ({
+      isActive: !prevState.isActive
+    }))
+  }
+
+  render(siteTitle) {
+    return (
+      <div className="navbar is-light is-fixed-top" role="navigation" aria-label="dropdown navigation">
+        <div className="navbar-brand">
+          <a className="navbar-item" href="/#">
+            <img src={Logo} alt={siteTitle} width="112" height="28" />
+          </a>
+          <div className="navbar-burger" data-target="navMenu" onClick={this.toggleNav}>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+
+        <div className={ this.state.isActive ? 'navbar-menu is-active' : 'navbar-menu'} id="navMenu">
+          <div className="navbar-end" onClick={this.toggleNav}>
+            <a className="navbar-item is-tab" href="/#">TOP</a>
+            <a className="navbar-item is-tab" href="/#feature">特徴</a>
+            <a className="navbar-item is-tab" href="/#price">価格表</a>
+            <a className="navbar-item is-tab" href="/#contact">お問い合わせ</a>
+          </div>
+        </div>
+      </div>
+    )
+  }
 }
 
 export default Header
