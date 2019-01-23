@@ -24,7 +24,7 @@ function PriceList({name, children}) {
             <thead>
               <tr>
                 <th></th>
-                <th className="has-text-centered" style={{minWidth:"10em"}}>月間最大入出荷数</th>
+                <th className="has-text-centered">月間最大入出荷数</th>
                 <th className="has-text-centered">月額</th>
               </tr>
             </thead>
