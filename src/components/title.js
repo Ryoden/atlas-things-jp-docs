@@ -52,7 +52,7 @@ const Title = ({ siteTitle }) => (
               <img src={Logo} alt={siteTitle} />
             </HeroTitle>
           </div>
-          <div className="column is-half">
+          <div className="column">
             <HeroDetail>
               <Red>A</Red>utomatically<br />
               <Red>T</Red>racking, <Red>L</Red>ocating and <Red>A</Red>nalyzing <Red>S</Red>ervice<br />
