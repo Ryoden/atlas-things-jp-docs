@@ -11,9 +11,18 @@ import Background from '../images/bg-main.jpg'
 const Body = styled.div.attrs({
   className: 'site-content'
 })`
-  padding-top: 0px;
-  background-image: url(${Background});
-  background-attachment: fixed;
+  &::before {
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:-1;
+    width:100vw;
+    height:100vh;
+    background:url(${Background});
+    -webkit-background-size:contain;
+    background-size:contain;
+    content:"";
+  }
 `
 
 const Layout = ({ children }) => (
