@@ -1,13 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
-import Background from '../images/bg-price.jpg'
 import TitleBar from './titleBar'
 
 const Hero = styled.section.attrs({
   className: 'hero is-fullheight'
 })`
-  background-image: url(${Background});
-  background-position: center center;
 `
 
 function PriceItem({name, quantity, price}) {

@@ -6,11 +6,14 @@ import styled from 'styled-components'
 import Header from './header'
 import Footer from './footer'
 import './all.scss'
+import Background from '../images/bg-main.jpg'
 
 const Body = styled.div.attrs({
   className: 'site-content'
 })`
   padding-top: 0px;
+  background-image: url(${Background});
+  background-attachment: fixed;
 `
 
 const Layout = ({ children }) => (
