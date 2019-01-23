@@ -48,7 +48,7 @@ const Title = ({ siteTitle }) => (
         </SubCopy>
         <div className="columns">
           <div className="column is-half">
-            <HeroTitle style={{ minWidth: 500, maxWidth: 600 }}>
+            <HeroTitle>
               <img src={Logo} alt={siteTitle} />
             </HeroTitle>
           </div>
