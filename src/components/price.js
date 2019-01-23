@@ -1,14 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
-import Background from '../images/bg-price.jpg'
-import TitleBar from './titleBar'
+import SectionDiv from './util'
 
-const Hero = styled.section.attrs({
-  className: 'hero is-fullheight'
-})`
-  background-image: url(${Background});
-  background-position: center center;
-`
 
 function PriceItem({name, quantity, price}) {
   return (
@@ -48,9 +41,8 @@ function PriceList({name, children}) {
 }
 
 const Price = () => (
-  <Hero id="price">
-    <TitleBar title="価格表（価格はすべて税抜きです）" />
-    <div className="hero-body columns">
+  <SectionDiv id="price" name="価格表（価格はすべて税抜きです）">
+    <div className="columns">
       <PriceList name="Starter">
         <PriceItem name="Small" quantity="20,000" price="￥50,000" />
         <PriceItem name="Medium" quantity="50,000" price="￥122,000" />
@@ -61,13 +53,22 @@ const Price = () => (
         <PriceItem name="Medium" quantity="500,000" price="￥546,000" />
         <PriceItem name="Large" quantity="750,000" price="￥630,000" />
       </PriceList>
-      <PriceList name="Enterprise">
-        <PriceItem name="Small" quantity="1,000,000" price="" />
-        <PriceItem name="Medium" quantity="2,000,000" price="" />
-        <PriceItem name="Large" quantity="3,000,000" price="" />
-      </PriceList>
     </div>
-  </Hero>
+
+    <div className="columns">
+      <div className="column">
+        <div className="card">
+          <header className="card-header">
+            <div className="card-header-title">Enterprise</div>
+          </header>
+          <div className="card-content">
+            <p>上記以上の場合は、お気軽にお問合せください。</p>
+            <p>100万件以上の入出荷数量でも対応可能です。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </SectionDiv>
 )
 
 export default Price

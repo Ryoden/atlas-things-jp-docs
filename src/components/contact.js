@@ -1,16 +1,20 @@
 import React from 'react'
-import styled from 'styled-components'
-import TitleBar from './titleBar'
+import SectionDiv from './util'
 
-const Hero = styled.section.attrs({
-  className: 'hero is-fullheight'
-})`
-`
 
 const Contact = () => (
-  <Hero id="contact">
-    <TitleBar title="お問い合わせ" subtitle="" />
-  </Hero>
+  <SectionDiv id="contact" name="お問い合わせ">
+    <div className="columns">
+      <div className="column">
+      サービスに関するご質問・ご要望は、下記までお寄せください。
+      </div>
+    </div>
+    <div className="columns">
+      <div className="column">
+        <a href="mailto:contact@atlas-things.jp">contact@atlas-things.jp</a>
+      </div>
+    </div>
+  </SectionDiv>
 )
 
 export default Contact
