@@ -1,6 +1,7 @@
 import React from 'react'
 
 import Logo from '../images/logo.png'
+import Catalog from '../../static/catalog.pdf'
 
 class Header extends React.Component {
   state = {
@@ -34,6 +35,7 @@ class Header extends React.Component {
             <a className="navbar-item is-tab" href="/#feature">特徴</a>
             <a className="navbar-item is-tab" href="/#price">価格表</a>
             <a className="navbar-item is-tab" href="/#contact">お問い合わせ</a>
+            <a className="navbar-item is-tab" href={Catalog} download="catalog.pdf">カタログ</a>
           </div>
         </div>
       </div>
