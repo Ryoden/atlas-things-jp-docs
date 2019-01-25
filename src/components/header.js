@@ -36,6 +36,7 @@ class Header extends React.Component {
             <a className="navbar-item is-tab" href="/#price">価格表</a>
             <a className="navbar-item is-tab" href="/#contact">お問い合わせ</a>
             <a className="navbar-item is-tab" href={Catalog} download="catalog.pdf">カタログ</a>
+            <a className="navbar-item is-tab" href="https://docs.atlas-things.io/">WebAPI</a>
           </div>
         </div>
       </div>
