@@ -3,6 +3,9 @@ import PropTypes from 'prop-types'
 import { StaticQuery, graphql } from 'gatsby'
 import styled from 'styled-components'
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowCircleUp } from '@fortawesome/free-solid-svg-icons'
+
 import Header from './header'
 import Footer from './footer'
 import './all.scss'
@@ -17,33 +20,6 @@ const ScrollToTop = styled.a`
   bottom: 50px; 
   right: 10px;
   padding: 6px 40px;
-
-  span {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    width: 46px;
-    height: 46px;
-    margin-left: -23px;
-    border: 1px solid #fff;
-    border-radius: 100%;
-    box-sizing: border-box;
-  }
-
-  span::after {
-    position: absolute;
-    top: 70%;
-    left: 50%;
-    content: '';
-    width: 16px;
-    height: 16px;
-    margin: -12px 0 0 -8px;
-    border-left: 1px solid #fff;
-    border-bottom: 1px solid #fff;
-    -webkit-transform: rotate(135deg);
-    transform: rotate(135deg);
-    box-sizing: border-box;
-  }
 `
 
 const Body = styled.div.attrs({
@@ -81,7 +57,7 @@ const Layout = ({ children }) => (
           {children}
         </Body>
         <Footer siteTitle={data.site.siteMetadata.title} />
-        <ScrollToTop href="#"><span></span></ScrollToTop>
+        <ScrollToTop href="#"><FontAwesomeIcon className="fa-3x" icon={faArrowCircleUp} /></ScrollToTop>
       </>
     )}
   />
