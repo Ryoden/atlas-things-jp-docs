@@ -2,6 +2,7 @@ import React from 'react'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons'
+import { faCloudDownloadAlt } from '@fortawesome/free-solid-svg-icons'
 
 import Logo from '../images/logo.png'
 import Catalog from '../../static/catalog.pdf'
@@ -38,7 +39,7 @@ class Header extends React.Component {
             <a className="navbar-item is-tab" href="/#feature">特徴</a>
             <a className="navbar-item is-tab" href="/#price">価格表</a>
             <a className="navbar-item is-tab" href="/#contact">お問い合わせ</a>
-            <a className="navbar-item is-tab" href={Catalog} download="catalog.pdf">カタログ</a>
+            <a className="navbar-item is-tab" href={Catalog} download="catalog.pdf"><FontAwesomeIcon icon={faCloudDownloadAlt} />カタログ</a>
             <a className="navbar-item is-tab" href="https://docs.atlas-things.io/"><FontAwesomeIcon icon={faExternalLinkAlt} />WebAPI</a>
           </div>
         </div>
