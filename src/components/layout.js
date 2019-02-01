@@ -8,6 +8,10 @@ import Footer from './footer'
 import './all.scss'
 import Background from '../images/bg-main.jpg'
 
+if (typeof window !== 'undefined') {
+  require('smooth-scroll')('a[href*="#"]', { offset: 60 });
+}
+
 const Body = styled.div.attrs({
   className: 'site-content'
 })`
