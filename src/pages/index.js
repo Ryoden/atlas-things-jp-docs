@@ -10,7 +10,7 @@ import Seo from '../components/seo'
 const IndexPage = () => (
   <Layout>
     <Seo
-      title="Home"
+      title="クラウド入出荷管理サービス"
       keywords={[`入出荷`,`RTI`,`循環容器`,`リターナブルラック`,`金属モジュール`,`パレット`,`車両管理`,`完成車`,`完成車物流`,`SCM`,`サプライチェーン`]}
     />
     <Title />
