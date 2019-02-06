@@ -4,10 +4,16 @@ import Layout from '../components/layout'
 import Title from '../components/title'
 import Price from '../components/price'
 import Contact from '../components/contact'
-import Feature from '../components/feature';
+import Feature from '../components/feature'
+import Seo from '../components/seo'
 
 const IndexPage = () => (
   <Layout>
+    <Seo
+      title="Home"
+      description="desc"
+      keywords={[`入出荷`,`RTI`,`循環容器`,`リターナブルラック`,`金属モジュール`,`パレット`,`車両管理`,`完成車`,`完成車物流`,`SCM`,`サプライチェーン`]}
+    />
     <Title />
     <Feature />
     <Price />
