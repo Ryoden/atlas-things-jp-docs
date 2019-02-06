@@ -1,7 +1,12 @@
 module.exports = {
   siteMetadata: {
     title: 'ATLAS-Things',
-    description: 'RFID 入出荷管理クラウドサービス',
+    description: [
+      'ATLAS-Things は RFID や QR に代表される自動認識技術を活用し、モノの入出荷を記録するためのクラウドサービスです。',
+      '従来の入出荷管理サービスのような数量管理ではなく、自動認識技術により『個品管理』を実現します。',
+      'マルチテナント方式で提供されるため、安価かつ迅速に提供することが可能です。',
+      'モノの入出荷を確実に把握することにより、無駄な在庫を無くしたり、在庫の紛失を予防したりすることが期待できます。'
+    ].join("\n"),
     author: 'Ryoden Corporation',
   },
   plugins: [
