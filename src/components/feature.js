@@ -78,12 +78,18 @@ const Feature = () => (
 
     <FeatureList>
       <FeatureItem name="セキュリティ">
+        すべての通信は HTTPS により暗号化されます。
+        また、認証により不正なデータのインポート・エクスポートを防ぎます。
       </FeatureItem>
 
       <FeatureItem name="BCP/DR対策">
+        地理的に離れた複数のデータセンターで運用します。
+        また、毎日データベースのバックアップを実施します。
       </FeatureItem>
 
-      <FeatureItem name="24時間365日の稼働監視">
+      <FeatureItem name="稼働監視">
+        24時間365日稼働を監視しています。<br />
+        障害検知時には直ちに復旧作業を行い、安定した稼働を提供します。
       </FeatureItem>
     </FeatureList>
   </SectionDiv>
