@@ -36,6 +36,7 @@ class Header extends React.Component {
         <div className={ this.state.isActive ? 'navbar-menu is-active' : 'navbar-menu'} id="navMenu">
           <div className="navbar-end" onClick={this.toggleNav}>
             <a className="navbar-item is-tab" href="/#">TOP</a>
+            <a className="navbar-item is-tab" href="/#abstract">概要</a>
             <a className="navbar-item is-tab" href="/#feature">特徴</a>
             <a className="navbar-item is-tab" href="/#price">価格表</a>
             <a className="navbar-item is-tab" href="/#contact">お問い合わせ</a>
