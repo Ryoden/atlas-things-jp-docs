@@ -27,9 +27,21 @@ const Feature = () => (
   <SectionDiv id="feature" name="特徴">
     <FeatureList>
       <FeatureItem name="対応データフォーマット">
+        <p>
+        データフォーマットに制限はありません。
+        </p>
+        <p>
+        RFID タグや２次元コードを読み取るハードウェアがあれば対応できます。
+        </p>
       </FeatureItem>
     
       <FeatureItem name="トレーサビリティ">
+        <p>
+        データキャリアに縛られない管理を行います。
+        </p>
+        <p>
+        そのため、様々なライフサイクルを持つ個品の入出荷履歴を追跡できます。
+        </p>
       </FeatureItem>
 
       <FeatureItem name="階層構造あり入出荷情報">
