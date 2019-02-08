@@ -44,12 +44,18 @@ const Feature = () => (
 
     <FeatureList>
       <FeatureItem name="拠点単位での入出荷">
+        拠点ごとに入出荷を把握することができます。
+        各拠点にクライアントを配置して入出荷情報を登録すれば、各拠点の在庫を把握できます。
       </FeatureItem>
 
       <FeatureItem name="クライアント認証">
+        クライアントごとに API キーを用意して、確実なクライアント認証を実現します。
+        APIキーが漏えいしてもクラウド側で無効化できます。
       </FeatureItem>
 
       <FeatureItem name="最低契約期間なし">
+        月額課金のクラウドサービスです。<br />
+        最短１ヶ月から利用可能で、最低利用期間はありません。
       </FeatureItem>
     </FeatureList>
 
