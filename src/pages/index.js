@@ -2,6 +2,7 @@ import React from 'react'
 
 import Layout from '../components/layout'
 import Title from '../components/title'
+import Abstract from '../components/abstract'
 import Price from '../components/price'
 import Contact from '../components/contact'
 import Feature from '../components/feature'
@@ -14,6 +15,7 @@ const IndexPage = () => (
       keywords={[`入出荷`,`RTI`,`循環容器`,`リターナブルラック`,`金属モジュール`,`パレット`,`車両管理`,`完成車`,`完成車物流`,`SCM`,`サプライチェーン`]}
     />
     <Title />
+    <Abstract />
     <Feature />
     <Price />
     <Contact />
