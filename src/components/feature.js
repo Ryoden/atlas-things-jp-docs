@@ -61,12 +61,18 @@ const Feature = () => (
 
     <FeatureList>
       <FeatureItem name="WebAPI 公開">
+        利用するアプリケーションやプログラミング言語に制限はありません。
+        仕様もオープンなため、ユーザーによるアプリ開発も可能です。
       </FeatureItem>
 
       <FeatureItem name="簡易ダッシュボード">
+        入出荷数量や入出荷履歴など、簡易的にデータを確認することができます。
+        滞留在庫など、簡易的な分析機能も確認できます。
       </FeatureItem>
 
       <FeatureItem name="BI ツール連携">
+        データエクスポート機能を使用して、 BI ツールにでデータをインポートできます。
+        これにより様々な分析ができるようになります。
       </FeatureItem>
     </FeatureList>
 
